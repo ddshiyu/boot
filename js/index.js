@@ -66,10 +66,17 @@ function banner() {
        }
        function render() {
               getData(function (res) {  
+
+                            var isMobile = $(window).width()<768?true:false;
                           $(res).each(function(i,item) {
-                            var picture=$('<div class="item '+(i==0?'active':'')+'"><a href="" class="img_box" style="background-image:url('+(item.pcUrl)+')"></a></div>'); 
-                            picture.appendTo($('.carousel-inner').get(0));   
-                            $('<li data-target="#carousel-example-generic" data-slide-to="'+i+'" class="'+(i==0?'active':'')+'"></li>').appendTo($('.carousel-indicators'));
+                            if(isMobile){
+                                   $('<div class="item '+(i==0?'active':'')+'"><a href="" class="m_imgBox"><img src="'+item.pcUrl+'" alt="..."></a></div>').appendTo($('.carousel-inner').get(0));
+                            }else{
+                                   var picture=$('<div class="item '+(i==0?'active':'')+'"><a href="" class="img_box" style="background-image:url('+(item.pcUrl)+')"></a></div>'); 
+                                   picture.appendTo($('.carousel-inner').get(0));   
+                                   $('<li data-target="#carousel-example-generic" data-slide-to="'+i+'" class="'+(i==0?'active':'')+'"></li>').appendTo($('.carousel-indicators'));
+                            }         
+                            
 
                           });                                               
                             

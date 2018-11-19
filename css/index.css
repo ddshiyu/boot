@@ -236,26 +236,26 @@ fieldset[disabled] .gold_nav .btn-link:focus {
     background-position:center;
     background-repeat:no-repeat;;
 }
-/* .gold_banner .img_box img{
+.gold_banner .img_box img{
     width:100%;
     display:block; 
 } */
-/*.wjs_banner .pc_imgBox{*/
-    /*display: block;*/
-    /*height: 400px;*/
-    /*width: 100%;*/
-    /*background-size: cover;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-/*}*/
-/*.wjs_banner .m_imgBox{*/
-    /*display: block;*/
-    /*width: 100%;*/
-/*}*/
-/*.wjs_banner .m_imgBox img{*/
-    /*display: block;*/
-    /*width: 100%;*/
-/*}*/
+.wjs_banner .pc_imgBox{
+    display: block;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wjs_banner .m_imgBox{
+    display:block;
+    width:100%;
+}
+.wjs_banner .m_imgBox img{
+    display: block;
+    width: 100%;
+} 
 .gold_pay{
     padding:15px 0;
     border-bottom:1px solid #cccccc;
@@ -446,7 +446,8 @@ fieldset[disabled] .gold_nav .btn-link:focus {
     line-height: 1.42857143;
     border:1px solid #ccc;
     border-radius:50%;
-    width:100px;
+    width:50px;
+    height:50px;
     text-align: center;
 }
 .gold_news .nav-tabs > li > a:hover {
