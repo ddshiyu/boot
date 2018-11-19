@@ -239,7 +239,7 @@ fieldset[disabled] .gold_nav .btn-link:focus {
 .gold_banner .img_box img{
     width:100%;
     display:block; 
-} */
+} 
 .wjs_banner .pc_imgBox{
     display: block;
     height: 400px;
@@ -277,11 +277,12 @@ fieldset[disabled] .gold_nav .btn-link:focus {
     }
 }
 .gold_order{
+    width:100%;
     padding:40px 0;
     border-bottom:1px solid #cccccc;
 }
 .gold_order .container{
-    width:900px;
+   
 }
 .gold_order .gold_now{
     color:#e92322;
