@@ -80,7 +80,8 @@ function banner() {
        render()
 }
 
+function fn1(){}
 
-
+       
 
 banner();
