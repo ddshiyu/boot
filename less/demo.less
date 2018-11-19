@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+.f(){
+  float:right;;
+}
+.w-50(@width:200px){
+  width:@width;
+}
+@className:box;
+.float{
+  .f();
+  .w-50(50px);
+}
+.@{className}{
+  .f();
+}
+
+.topBar{
+  /*border-top:1px solid #ccc;*/
+  border-bottom: 1px solid #ccc;
+  font-size:12px;
+  img{
+    height:40px;
+    line-height:40px;
+    text-align:center;
+  }
+  &:hover {
+    img{
+      height:40px;
+      line-height:40px;
+      text-align:center;
+    }
+  }
+  > div {
+    height:40px;
+    line-height:40px;
+    text-align:center;
+  }
+  >div > li {
+    height:40px;
+    line-height:40px;
+    text-align:center;
+  }
+}
